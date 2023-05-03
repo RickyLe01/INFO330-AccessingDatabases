@@ -31,7 +31,6 @@ for i, arg in enumerate(sys.argv):
         cursor.execute(name_types)
     result = cursor.fetchone()
 
-
     for type in types:
         sql = ("SELECT pv.against_" + type + " " +
             "FROM pokemon_types_battle_view pv " +
